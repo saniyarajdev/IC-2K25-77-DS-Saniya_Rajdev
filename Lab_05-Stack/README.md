@@ -1,81 +1,74 @@
-# Lab 04 – Queue
+# Lab 05 – Stack
 
-## Program 01 – Queue Implementation (Queue_Implementation.cpp)
+## Program 01 – Stack Implementation (Stack_Implementation.cpp)
 
 ### Problem Statement
-Implement a menu-driven C++ program to perform basic operations on a linear Queue data structure, including data entry (Enqueue), data removal (Dequeue), and visualization of active elements.
+Implement a menu-driven C++ program to perform basic operations on a Stack data structure using an object-oriented class implementation, including adding elements (Push), removing elements (Pop), and displaying the stack elements.
 
 ### Approach
-The program builds a linear Queue memory block using standard function hooks managed inside a dynamic `do-while` menu dashboard configuration:
-* **Enqueue (Case 1):** Prompts the user for a new data value, inserts it at the rear of the structure, and updates the boundary tracking references.
-* **Dequeue (Case 2):** Extracts the earliest added element from the front boundary reference point and updates the queue alignment pointers.
-* **Display (Case 3):** Traverses the collection sequentially from front to rear to print all currently active data values to the console window.
-* **Exit (Case 4):** Terminates the operational workspace loop cleanly.
+The program defines a stack class structure named `stac`, initializing an instance `s` inside a interactive `do-while` menu context loop to manage standard operations:
+* **Push (Case 1):** Invokes the `s.push()` member function to insert a user-specified value at the top boundary pointer of the stack workspace, adjusting limits accordingly.
+* **Pop (Case 2):** Invokes the `s.pop()` member function to remove the most recently added element from the top reference point of the tracking frame.
+* **Display (Case 3):** Invokes the `s.display()` member function to traverse sequentially down from the active top element index to expose current numbers within the terminal console.
+* **Loop Control:** Evaluates an explicit character check request (`c == 'y' || c == 'Y'`) after each dashboard switch choice to decide whether to continue workspace execution.
 
 ### Time and Space Complexity
 * **Time Complexity:** 
-  * Enqueue and Dequeue operations execute in O(1) constant time, as they update boundary index pointers natively without element shifts.
-  * Display traversal runs in O(N) linear time, where N is the total count of elements within the boundaries.
-* **Space Complexity:** O(1) auxiliary space as it handles structural changes in-place using a static pre-allocated array space.
+  * Push and Pop operations execute in O(1) constant time as they adjust the explicit top index marker natively without scanning data arrays.
+  * Display execution runs in O(N) linear time, where N is the total count of active elements currently contained on the stack tracking layer.
+* **Space Complexity:** O(1) auxiliary space as data changes are processed directly inside the pre-allocated fixed memory structure layout.
 
 ---
 
 ## Sample Input/Output
 
-### Program 01: Queue_Implementation.cpp
+### Program 01: Stack_Implementation.cpp
 ```text
-1. Enqueue
-2. Dequeue
+1. Push
+2. Pop
 3. Display
-4. Exit
-
 Enter your choice: 1
-Enter value: 15
 
-1. Enqueue
-2. Dequeue
+Enter element to push: 45
+Do you want to continue? (y/n): y
+
+1. Push
+2. Pop
 3. Display
-4. Exit
-
 Enter your choice: 1
-Enter value: 25
 
-1. Enqueue
-2. Dequeue
+Enter element to push: 82
+Do you want to continue? (y/n): y
+
+1. Push
+2. Pop
 3. Display
-4. Exit
-
 Enter your choice: 3
-Queue elements are: 15 25 
 
-1. Enqueue
-2. Dequeue
+Stack elements are: 82 45 
+Do you want to continue? (y/n): y
+
+1. Push
+2. Pop
 3. Display
-4. Exit
-
 Enter your choice: 2
-Dequeued element successfully.
 
-1. Enqueue
-2. Dequeue
+Popped element successfully.
+Do you want to continue? (y/n): y
+
+1. Push
+2. Pop
 3. Display
-4. Exit
-
 Enter your choice: 3
-Queue elements are: 25 
 
-1. Enqueue
-2. Dequeue
-3. Display
-4. Exit
-
-Enter your choice: 4
-Exiting...
+Stack elements are: 45 
+Do you want to continue? (y/n): n
 ```
 
 ---
 
 ## Learning Outcomes
-* Understood the core First-In, First-Out (FIFO) behavioral architecture governing standard Queue systems.
-* Gained hands-on experience manipulating boundary reference point coordinates (`front` and `rear`) to route sequential data streams.
-* Practiced implementing dynamic menu loops using interactive case-based switch execution branches.
+* Mastered the core Last-In, First-Out (LIFO) behavioral logic driving Stack memory models.
+* Understood index boundary constraints (Handling underflow and overflow tracking bounds) using a tracked pointer scheme.
+* Gained experience controlling persistent workspace states using interactive menu check boundaries.
+
